@@ -5,6 +5,7 @@ namespace PerformanceTestCSharp.Models;
 
 public class Animal
 {
+    //properties
     protected int Id  {get;set;}
     protected string Name {get;set;}
     protected DateOnly BirthDate  {get;set;}
@@ -13,7 +14,7 @@ public class Animal
     protected double WeightInKG  {get;set;}
     protected string BasicReviewI {get; set;}
 
-
+//ctor
     public Animal(int Id ,string Name ,DateOnly BirthDate ,string Breed ,string Color ,double WeightInKG, string BasicReviewI)
     {
         this.Id = Id;
@@ -22,7 +23,7 @@ public class Animal
         this.Breed = Breed;
         this.Color = Color;
         this.WeightInKG = WeightInKG;
-        this.BasicReviewI = BasicReview(); 
+        this.BasicReviewI = BasicReviewI; 
     }
 
 
@@ -53,6 +54,7 @@ public string SetBasicReview(string NewBasicReview) => this.BasicReviewI = NewBa
 public virtual void ShowInformation()
 {
     Console.WriteLine(@$"
+Id: {this.Id}
 Name: {this.Name}
 BirthDate: {this.BirthDate}
 Breed: {this.Breed}
@@ -61,17 +63,29 @@ WeightInKg: {this.WeightInKG} Kg
 Basic review: {this.BasicReviewI}");
 }
 
-protected string BasicReview()
+protected static string BasicReview()
 {
-    Console.WriteLine("Enter a basic review of the animal: ");
+    Console.Write("Enter a basic review of the animal: ");
     string BasicReview = verificationSystem.NormalizationOfString("Enter a basic review of the animal: ");
     return BasicReview;
 }
 
+public static string ReceiveBasicreview()
+{
+    string review = BasicReview();
+    return review;
+}
 protected int CalculateAgeInMonths()
 {
-    int AgeInMonths = (this.BirthDate.Year * 12) + (this.BirthDate.Month);
+    int yearsToMonths = ((DateTime.Now.Year - BirthDate.Year)*12) - 1;
 
-    return AgeInMonths; 
+    if(BirthDate.Month >DateTime.Now.Month)
+    {
+        return yearsToMonths + DateTime.Now.Month;
+    }
+    else
+    {
+        return yearsToMonths +1 + (DateTime.Now.Month - BirthDate.Month)  ;
+    }
 }
 }

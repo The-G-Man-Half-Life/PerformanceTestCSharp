@@ -1,0 +1,15 @@
+/home/riwip5-012/Documents/PerformanceTestCSharp/obj/Debug/net8.0/PerformanceTestCSharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/riwip5-012/Documents/PerformanceTestCSharp/obj/Debug/net8.0/PerformanceTestCSharp.AssemblyInfoInputs.cache
+/home/riwip5-012/Documents/PerformanceTestCSharp/obj/Debug/net8.0/PerformanceTestCSharp.AssemblyInfo.cs
+/home/riwip5-012/Documents/PerformanceTestCSharp/obj/Debug/net8.0/PerformanceTestCSharp.csproj.CoreCompileInputs.cache
+/home/riwip5-012/Documents/PerformanceTestCSharp/obj/Debug/net8.0/PerformanceTestCSharp.sourcelink.json
+/home/riwip5-012/Documents/PerformanceTestCSharp/bin/Debug/net8.0/PerformanceTestCSharp
+/home/riwip5-012/Documents/PerformanceTestCSharp/bin/Debug/net8.0/PerformanceTestCSharp.deps.json
+/home/riwip5-012/Documents/PerformanceTestCSharp/bin/Debug/net8.0/PerformanceTestCSharp.runtimeconfig.json
+/home/riwip5-012/Documents/PerformanceTestCSharp/bin/Debug/net8.0/PerformanceTestCSharp.dll
+/home/riwip5-012/Documents/PerformanceTestCSharp/bin/Debug/net8.0/PerformanceTestCSharp.pdb
+/home/riwip5-012/Documents/PerformanceTestCSharp/obj/Debug/net8.0/PerformanceTestCSharp.dll
+/home/riwip5-012/Documents/PerformanceTestCSharp/obj/Debug/net8.0/refint/PerformanceTestCSharp.dll
+/home/riwip5-012/Documents/PerformanceTestCSharp/obj/Debug/net8.0/PerformanceTestCSharp.pdb
+/home/riwip5-012/Documents/PerformanceTestCSharp/obj/Debug/net8.0/PerformanceTestCSharp.genruntimeconfig.cache
+/home/riwip5-012/Documents/PerformanceTestCSharp/obj/Debug/net8.0/ref/PerformanceTestCSharp.dll

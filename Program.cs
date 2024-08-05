@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/*Name: Mateo MOntoya Ospina
+Clan: berners leee*/
+using PerformanceTestCSharp.Models;
+
+VisualInterface.RunSystem();

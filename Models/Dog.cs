@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 namespace PerformanceTestCSharp.Models;
 public class Dog: Animal
 {
+    //properties
     public bool BreedingStatus {get; set;}
     public string Temperament {get;set;}
     public string MicrochipNumber {get;set;}
     public string BarkVolume {get;set;}
     public string CoatType {get;set;}
 
-
+//ctor
     public Dog(int Id ,string Name ,DateOnly BirthDate ,string Breed ,string Color ,double WeightInKG, string BasicReviewI,bool BreedingStatus,string Temperament,string MicrochipNumber,string BarkVolume,string CoatType):base(Id,Name,BirthDate,Breed,Color,WeightInKG,BasicReviewI)
     {
         this.BreedingStatus = BreedingStatus;
@@ -23,7 +24,7 @@ public class Dog: Animal
         this.CoatType = CoatType;
     }
 
-
+//main methods
     public bool CastrateAnimal()
     {
         if(this.BreedingStatus == false)
@@ -38,17 +39,18 @@ public class Dog: Animal
         }
     }
 
-    public string Hairdress()
+    public void Hairdress()
     {
-        if(this.CoatType == "without hair " || this.CoatType == "short hair")
+        if(this.CoatType == "without hair" || this.CoatType == "short hair")
         {
+            
             Console.WriteLine("Your pet can not receive a hair cut");
-            return this.CoatType;
+            this.CoatType = this.CoatType;
         }
         else
         {
             string option = VisualInterface.DisplayKindOfHairDresses();
-            return option;
+            this.CoatType = option;
         }
     }
 
@@ -59,6 +61,7 @@ public class Dog: Animal
 Temperament: {this.Temperament}
 MicrochipNumber: {this.MicrochipNumber}
 BarkVolume: {this.BarkVolume}
-CoatType: {this.CoatType}");
+CoatType: {this.CoatType}
+Age in months: {this.CalculateAgeInMonths()}");
     }
 }
